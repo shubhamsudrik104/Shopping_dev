@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #f66e56;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  min-height: 100px;
+}
+
+.firstline {
+  width: 100%;
+  height: 32px;
+  background: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstline a {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* ---------------- NAVBAR ---------------- */
+
+.menu {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+
+  /* for sticking the window to the top */
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.menu-logo h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+}
+
+.menu-nmenu ul {
+  display: flex;
+
+  gap: 55px;
+  list-style: none;
+  align-items: center;
+}
+
+.menu-nmenu select {
+  border: none;
+  font-size: 16px;
+  color: white;
+  background: transparent;
+}
+
+.menu-nmenu a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 16px;
+}
+
+.menu-nmenu a:hover,
+.menu-nmenu select:hover {
+  color: #f66e56;
+  text-decoration: underline;
+}
+
+/* SEARCH BAR */
+.menu-searchbar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+
+  padding: 0 20px;
+}
+
+#serachbar {
+  width: 100%;
+  height: 45px;
+  border-radius: 35px;
+  border: none;
+  background: #f2f2f2;
+  padding: 0 18px;
+  font-size: 15px;
+}
+
+/* CART + USER ICONS */
+.menu-cart ul {
+  display: flex;
+  gap: 25px;
+  filter: invert();
+  list-style: none;
+  align-items: center;
+}
+
+.menu-cart img {
+  width: 28px;
+  cursor: pointer;
+}
+
+.heroimg {
+  width: 100%;
+  min-height: 780px;
+
+  background-image: url("../img/heroimage.png");
+  background-size: cover; /* image covers full area */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroimg h1 {
+  width: 50%;
+  padding-top: 90px;
+  padding-left: 60px;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 76px;
+  font-weight: 900;
+}
+.heroimg .line {
+  width: 40%;
+  padding: 0px 0px 0px 70px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(59, 58, 58);
+  font-size: 18px;
+}
+.btn-shopnow {
+  border-radius: 50px;
+  border: none;
+  margin-top: 30px;
+  margin-left: 70px;
+  cursor: pointer;
+  font-family: "Archivo Black", sans-serif;
+
+  background-color: black;
+  color: white;
+  height: 45px;
+  width: 210px;
+}
+.btn-shopnow {
+  transition: 0.3s ease;
+}
+.btn-shopnow:hover {
+  transform: scale(1.13);
+  background-color: rgb(173, 162, 162);
+  color: black;
+  border: 0.5px solid #000;
+}
+#psmall {
+  font-size: 12px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(37, 36, 36);
+}
+.heroimg ul {
+  display: flex;
+  padding: 70px;
+  gap: 40px;
+}
+.heroimg p {
+  font-size: 37px;
+  font-family: "Archivo Black", sans-serif;
+  color: black;
+}
+.heroimg ul li {
+  list-style: none;
+}
+.brands {
+  width: 100%;
+  height: 100px;
+  /* padding: 30px; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+}
+.brands a img {
+  filter: invert(1);
+  width: 100%;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.newarivals {
+  width: 100%;
+}
+.new {
+  font-size: 63px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  padding: 50px;
+  text-align: center;
+}
+
+.cloth {
+  display: flex;
+  justify-content: space-between; /* spacing between cards */
+  gap: 25px; /* space BETWEEN each card */
+  padding: 0 40px;
+}
+.div1 {
+  width: 23%;
+  height: 380px;
+  background-color: #f66e56;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.div1 img {
+  width: 80%;
+}
+#jeans {
+  width: 70%;
+}
+#shirt {
+  width: 98%;
+}
+
+.cloth img {
+  transition: transform 0.3s;
+}
+
+.cloth img:hover {
+  transform: scale(1.13);
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.412));
+}
+
+.desc {
+  width: 100%;
+  padding-top: 22px;
+  padding-left: 41px;
+  min-height: 10px;
+  display: flex;
+}
+.desc1 {
+  width: 25%;
+}
+
+.desc1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650;
+}
+.desc h1 {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.desc1 h2 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 830;
+}
+
+#view {
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(247, 245, 245);
+  border: 0.5px solid #000;
+  font-family: "Archivo Black", sans-serif;
+
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: rgb(15, 15, 15);
+  height: 45px;
+  width: 210px;
+}
+.view {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+#view {
+  transition: 0.3s ease;
+  font-size: 15px;
+  color: black;
+}
+#view:hover {
+  transform: scale(1.14);
+  background-color: black;
+  color: white;
+}
+
+.topselling {
+  width: 100%;
+
+  min-height: 300px;
+}
+.tsline h1 {
+  font-size: 63px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-ts {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 40px;
+}
+.section1 {
+  width: 23%;
+  height: 380px;
+  background-color: #f66e56;
+  border-radius: 20px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.section1 img {
+  width: 90%;
+
+  border-radius: 40px;
+}
+
+.section1 img {
+  transition: 0.5s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgb(1, 10, 0) 0px 8px 16px -8px;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.412));
+}
+.section1 img:hover {
+  transform: scale(1.23);
+  box-shadow: none;
+}
+
+.box {
+  width: 83%;
+  height: 980px;
+
+  border-radius: 40px;
+  background-color: #f66e56;
+  margin: auto;
+}
+
+.line-browse {
+  width: 100%;
+  height: 50px;
+}
+.line-browse h1 {
+  color: black;
+  font-size: 63px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  padding: 40px;
+  text-align: center;
+  /* border: 1px solid #000; */
+}
+
+.div-no-1 {
+  width: 100%;
+  margin-top: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  padding: 0px 30px;
+}
+.a1 {
+  width: 29%;
+  height: 350px;
+  border-radius: 30px;
+
+  background-image: url("../img/casual.png");
+  background-size: cover;
+}
+.a2 {
+  width: 62%;
+  height: 350px;
+  border-radius: 30px;
+  background-image: url("../img/suit.jpg");
+  background-color: white;
+  background-size: cover;
+}
+
+.div-no-2 {
+  width: 100%;
+  margin-top: 270px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  padding: 0px 30px;
+}
+.b1 {
+  width: 62%;
+  height: 350px;
+  border-radius: 30px;
+  background-image: url("../img/party.jpg");
+  background-color: white;
+  background-size: cover;
+}
+.b2 {
+  width: 29%;
+  height: 350px;
+  border-radius: 30px;
+  background-image: url("../img/gym.png");
+  background-size: cover;
+}
+.a1,
+.a2,
+.b1,
+.b2 h1 {
+  padding: 16px;
+
+  font-family: "Archivo Black", sans-serif;
+}
+.a1,
+.a2,
+.b1,
+.b2 {
+  transition: 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+
+.a1:hover,
+.a2:hover,
+.b1:hover,
+.b2:hover {
+  transform: scale(0.93);
+  border-radius: 0px;
+}
+
+.customer {
+  width: 100%;
+  min-height: 90px;
+}
+.line-happy {
+  font-family: "Archivo Black", sans-serif;
+  padding: 40px;
+}
+.rev {
+  width: 100%;
+  min-height: 300px;
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px;
+  padding: 0px 40px;
+  align-items: center;
+}
+.review {
+  width: 28%;
+  border-radius: 20px;
+  min-height: 220px;
+  padding: 19px;
+  text-align: left;
+  border: 1px solid #c4b8b8;
+}
+.review p {
+  padding: 7px 0px;
+}
+.review h1 {
+  font-size: 23px;
+  padding: 7px 0;
+
+  font-family: "Archivo Black", sans-serif;
+}
+.review h2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: rgb(127, 125, 125);
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.review {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.review:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.01);
+}
+
+/* black box */
+
+.blackbox {
+  width: 90%;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  background-color: black;
+
+  border-radius: 14px;
+}
+.blackbox-div1 {
+  width: 50%;
+  min-height: 100px;
+}
+.blackbox-div1 h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Archivo Black", sans-serif;
+  padding-top: 29px;
+  text-align: center;
+}
+.blackbox-div2 {
+  width: 40%;
+  /* border: 1px solid #000; */
+  height: 100px;
+}
+#email,
+#subscribe {
+  height: 50px;
+  margin-top: 17px;
+  width: 86%;
+  padding: 12px;
+  border-radius: 42px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+}
+#subscribe {
+  color: white;
+  background-color: black;
+  border: 1px solid #ffffff;
+  transition: 0.3s ease;
+}
+
+#subscribe:hover {
+  transform: scale(1.09);
+  color: black;
+  background-color: white;
+}
+
+#email:hover {
+  border: 1px solid #ffffff;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px 30px;
+  min-height: 100px;
+}
+.dfooter {
+  width: 20%;
+  height: 300px;
+}
+.dfooter h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 36px;
+  padding: 12px 0px;
+  font-weight: 900;
+}
+.dfooter p {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+  color: rgb(154, 154, 154);
+  padding: 12px 0px;
+}
+
+.dfooter img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover; 
+}
+/* wp size lai mothi zhali kami keli */
+
+
+.dfooter ul {
+  display: flex;
+ 
+  gap: 16px;
+}
+.dfooter ul li {
+  list-style-type: none;
+}
+.dfooter2 {
+  padding: 32px;
+  width: 20%;
+}
+
+.dfooter2 h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  padding: 0px 0px 12px 12px;
+  font-weight: 600;
+  color: rgb(42, 41, 41);
+}
+
+.dfooter2 ul li {
+  list-style-type: none;
+}
+.dfooter2 ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding: 12px;
+  /* border: 1px solid #000; */
+  color: grey;
+}
+
+
+
+.dfooter2 h2:hover{
+  text-decoration: underline;
+}
+.dfooter2 ul li a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+.copyrights {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+.copyright h1 {
+  font-size: 0.87rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: grey;
+}
+.payment {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  /* justify-content: right; */
+}
+.payment a img {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+
+
+.devloper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: black;
+  color: white;
+    font-family: "Poppins", sans-serif;
+
+
+}
